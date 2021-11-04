@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  width: 100vw;
+  background: url(./assets/pexels-billel-moula-540518.jpg);
+  background-size: cover;
+  background-position: center;
+
+  background-repeat: no-repeat;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  color: #112a46;
+  position: relative;
+}
+
+header {
+  width: 100%;
+  width: 70%;
+  margin: 0 auto;
+  /* border: 3px solid white; */
+}
+.logo {
+  width:120px;
+  box-shadow: none;
+  position: absolute;
+  left: 2.5rem;
+  top:2rem;
+  border-radius:50%;
+  box-shadow: 10px 10px 55px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 55px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 55px 0px rgba(0, 0, 0, 0.75);
+}
+
+.nav ul {
+  height: 10vh;
+padding-top: 1.5rem;
+  display: flex;
+  /* flex-direction:row; */
+  justify-content: space-evenly;
+  align-items: center;
+}
+.nav li {
+  list-style: none;
+  background-color: #f6f6f600;
+  padding: 1.5rem 4rem;
+  font-family: "Roboto", sans-serif;
+
+  box-shadow: 10px 10px 55px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 55px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 55px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+}
+
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+section {
+  height: 80vh;
+  /* border: 3px solid white; */
+  width: 90%;
+  margin: 1rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  /* background-color: #75747541; */
+  /* box-shadow: 10px 10px 55px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 55px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 55px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 10px; */
+}
+
+.section-content {
+  width: 95%;
+  height: 85%;
+  padding: 2rem;
+  /* background-color: #75747562; */
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: whitesmoke;
+}
+.section-content p {
+  width: 75%;
+}
+.section-content img {
+  border-radius: 25px;
+  width: 300px;
+  padding:1rem
+}
+.section-content,
+.section-content img:hover {
+  box-shadow: 10px 10px 55px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 55px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 55px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+}
+.section-header {
+  margin: 0 auto;
+  box-shadow: 10px 10px 55px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 10px 10px 55px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 10px 10px 55px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  padding: 1rem 2rem;
+  color: #112a46;
+}
+.section-text {
+  width: 100%;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  /* flex-direction: column;   */
+}
+.section-text ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footer {
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  font-size: 1.2rem;
+}
+.footer p {
+  text-align: center;
+}
+@media (max-width: 800px) {
+  body {
+    font-size: 20px;
+    font-weight: normal;
+  }
+  .nav li {
+    padding: 0.75rem 1rem;
+  }
+  .logo{
+    width:70px;
+  }
+  .section-content {
+    height: 100vh;
+    width: 100%;
+    padding: 0.75rem;
+  }
+  .section-text ul {
+    /* display:flex;flex-direction:column; */
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .section-text ul img {
+    width: 175px;
+  }
+  .section-header {
+    padding: 0.5rem 1rem;
+    font-size: 20px;
+  }
+  .section-text {
+    margin: 1rem auto;
+  }
+}
+@media (max-width: 600px) {
+  body {
+    font-size: 1rem;
+    font-weight: normal;
+  }
+  .nav li {
+    padding: 0.75rem;
+  }
+  .section-content {
+    height: 100vh;
+    width: 100%;
+    padding: 0.75rem;
+  }
+  .section-text ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  .section-text ul img {
+    width: 120px;
+    margin-bottom: 0.5rem;
+  }
+  .section-header {
+    padding: 0.5rem 1rem;
+    font-size: 20px;
+  }
+  .section-text {
+    margin: 1rem auto;
+    font-size: 20px;
+  }
+  p.section-text > img {
+    width: 150px;
+  }
+  .footer {
+    font-size: 0.75rem;
+  }
+}
